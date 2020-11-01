@@ -5,6 +5,8 @@ $color_4: #17c0b5;
 $color_5: #0eb0a5;
 $color_6: #00767f;
 
+$color_light: #a9e1dd;
+
 header{
   display: inline-block;
   width: 100%;
@@ -14,10 +16,63 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 80px;
-    div:first-child{
-      background: radial-gradient($color_1 25%, $color_2 25% 30%, $color_3 30% 35%, $color_4 35% 40%, $color_5 40% 100%);
+    > div:first-child{
+      background: radial-gradient($color_1 30%, $color_2 30% 40%, $color_3 40% 50%, $color_4 50% 60%, transparent 60% 100%);
       height: 500px;
+      position: relative;
       width: 500px;
+      img{
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    > div:last-child{
+      color: white;
+      div:first-child{
+        align-items: center;
+        display: flex;
+        margin-bottom: 2rem;
+        i{
+          color: $color_light;
+          font-size: 3rem;
+          margin-right: .5rem;
+        }
+        h5{
+          font-size: 1.5rem;
+        }
+      }
+      h3{
+        text-transform: uppercase;
+      }
+      div:last-child{
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        font-size: 2rem;
+        line-height: 1;
+        i{
+          background: $color_5;
+          padding: .5rem;
+          transition: background-color .5s;
+        }
+        a{
+          background: $color_1;
+          color: white;
+          padding: .5rem;
+          text-decoration: none;
+          transition: background-color .5s;
+        }
+        &:hover{
+          i{
+            background: $color_6;
+          }
+          a{
+            background: $color_3;
+          }
+        }
+      }
     }
   }
 }
