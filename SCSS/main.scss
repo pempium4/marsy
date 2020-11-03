@@ -1,4 +1,25 @@
+$color_1: #42eee3;
+$color_2: #2ee2d6;
+$color_3: #1fd0c4;
+$color_4: #17c0b5;
+$color_5: #0eb0a5;
+$color_6: #00767f;
+
 body{
   position: relative;
-  height: 2000px;
+}
+.icons{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  right: 0;
+  li{
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+.section{
+  background: linear-gradient(135deg, $color_6 20%, $color_2 60% 90%, $color_4 98%);
 }
