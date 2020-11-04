@@ -1,10 +1,4 @@
-$color_1: #42eee3;
-$color_2: #2ee2d6;
-$color_3: #1fd0c4;
-$color_4: #17c0b5;
-$color_5: #0eb0a5;
-
-$color_grey: #565656;
+@import "colors.scss";
 
 nav{
   align-items: center;
@@ -34,13 +28,17 @@ nav{
     margin: 0;
     padding: 0;
     li{
-      color: $color_grey;
       font-size: 1.5rem;
-      padding: 0 .5rem;
-      transition: background-color .5s;
-      &:hover{
-        cursor: pointer;
-        background: rgba(100, 100, 100, 0.1);
+      a{
+        color: $color_grey;
+        padding: 0 .5rem;
+        transition: background-color .5s;
+        &:hover{
+          cursor: pointer;
+          background: rgba(100, 100, 100, 0.1);
+          color:inherit;
+          text-decoration: none;
+        }
       }
     }
   }

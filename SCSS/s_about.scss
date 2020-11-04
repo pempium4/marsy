@@ -1,6 +1,7 @@
-$color_6: #00767f;
+@import "colors.scss";
 
 #about{
+  color: $color_grey;
   text-align: center;
   h3{
     font-weight: 450;
@@ -14,14 +15,13 @@ $color_6: #00767f;
     align-items: center;
     background: linear-gradient(135deg, $color_6 49.75%, white 49.75% 50.25%, $color_6 50.25% 100%);
     border-radius: 50%;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
     color: white;
     display: flex;
     flex-direction: column;
     font-family: "Times New Roman", serif;
     justify-content: center;
-    height: 500px;
     margin: 3rem auto;
-    width: 500px;
     p{
       font-size: 5rem;
       margin: 0;

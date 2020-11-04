@@ -1,11 +1,7 @@
-$color_1: #42eee3;
-$color_2: #2ee2d6;
-$color_3: #1fd0c4;
-$color_4: #17c0b5;
-$color_5: #0eb0a5;
-$color_6: #00767f;
+@import "colors.scss";
 
 body{
+  min-width: 512px;
   position: relative;
 }
 .icons{
@@ -22,4 +18,78 @@ body{
 }
 .section{
   background: linear-gradient(135deg, $color_6 20%, $color_2 60% 90%, $color_4 98%);
+}
+.container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  >div:first-child{
+    background: radial-gradient($color_1 30%, $color_2 30% 40%, $color_3 40% 50%, $color_4 50% 60%, transparent 60% 100%);
+    position: relative;
+    img{
+      max-height: 90%;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  >div:last-child{
+    color: white;
+    div:first-child{
+      align-items: center;
+      display: flex;
+      margin-bottom: 2rem;
+      i{
+        font-size: 3rem;
+        margin-right: .5rem;
+      }
+      h5{
+        font-size: 1.5rem;
+      }
+    }
+    h3{
+      text-transform: uppercase;
+    }
+    div:last-child{
+      cursor: pointer;
+      display: flex;
+      font-size: 2rem;
+      line-height: 1;
+      margin-top: 2rem;
+      i{
+        background: $color_5;
+        padding: .5rem;
+        transition: background-color .5s;
+      }
+      a{
+        background: $color_1;
+        color: white;
+        padding: .5rem;
+        text-decoration: none;
+        transition: background-color .5s;
+      }
+      &:hover{
+        i{
+          background: $color_6;
+        }
+        a{
+          background: $color_3;
+        }
+      }
+    }
+  }
+}
+.circle{
+  height: 512px;
+  width: 512px;
+}
+footer{
+  text-align: center;
+  z-index: 99;
+  p{
+    color: $color_grey;
+    margin: 0;
+    padding: 1rem 0;
+  }
 }

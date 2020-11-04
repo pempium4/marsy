@@ -1,11 +1,10 @@
-$color_5: #0eb0a5;
-$color_3: #1fd0c4;
+@import "colors.scss";
 
 #gallery{
   ul{
     margin: 0;
     li{
-      background: linear-gradient(90deg, $color_5, $color_3);
+      background: linear-gradient(90deg, $color_6, $color_4);
       flex: 1;
     }
   }
