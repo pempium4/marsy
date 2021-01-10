@@ -1,12 +1,4 @@
 @media screen and (max-width: 575px){
-  #gallery{
-    ul{
-      li{
-        font-size: 1.75rem;
-        padding: 1rem;
-      }
-    }
-  }
   #info{
     div:first-child{
       p{
@@ -20,34 +12,6 @@
       img{
         padding: 1rem;
         width: 192px;
-      }
-    }
-  }
-  .circle{
-    height: 256px;
-    width: 256px;
-  }
-  .container{
-    >div:last-child{
-      div:first-child{
-        margin-bottom: .5rem;
-        i{
-          font-size: 2rem;
-          margin-right: .5rem;
-        }
-        h5{
-          font-size: 1.25rem;
-        }
-      }
-      h3{
-        font-size: 1.5rem;
-      }
-      p{
-        font-size: 0.75rem;
-      }
-      div:last-child{
-        font-size: 1rem;
-        margin-top: .5rem;
       }
     }
   }

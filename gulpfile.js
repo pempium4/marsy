@@ -10,7 +10,6 @@ const gulpSourceMaps = require('gulp-sourcemaps');
 
 const gulpRename = require('gulp-rename');
 
-
 gulp.task('del', () => {
     return del(['Build/*']);
 });
@@ -49,5 +48,4 @@ gulp.task('watch', () => {
     gulp.watch('./JS/**/*.js', gulp.series('scripts'));
     gulp.watch('./*.html').on('change', browserSync.reload);
 });
-
 gulp.task('default', gulp.series('del', gulp.parallel('styles', 'scripts'), 'watch'));
